@@ -11,3 +11,6 @@ Displays the number of posts a user has made in total, in the following location
 | `user_post_count_in_usercard` | Whether to display the count in usercard | `true`  |
 
 ### Screenshots
+
+![image](https://github.com/Arkshine/discourse-user-post-count/assets/360640/f7b30984-2c27-4144-8013-1197760795ba)
+
