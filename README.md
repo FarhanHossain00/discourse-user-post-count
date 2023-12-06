@@ -1,5 +1,13 @@
-# **Plugin Name** Plugin
+# **Dicourse User Post Count** Plugin
 
-**Plugin Summary**
+Displays the number of posts a user has made in total, in the following locations:
+  * Post (*next to the username*)
+  * User card (*below the username*)
 
-For more information, please see: **url to meta topic**
+### Settings
+| settings                            | description                                  | default |  
+|-------------------------------------|----------------------------------------------|---------|
+| `user_post_count_in_post`     | Whether to display the count in post         | `true`  |
+| `user_post_count_in_usercard` | Whether to display the count in usercard | `true`  |
+
+### Screenshots
