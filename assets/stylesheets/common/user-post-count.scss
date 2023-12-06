@@ -1,0 +1,10 @@
+.user-post-count {
+  color: var(--primary-500);
+  margin-inline: 0.6rem;
+  font-weight: bold;
+  font-size: var(--font-down-1);
+}
+
+#user-card .user-post-count {
+  margin-inline: initial;
+}

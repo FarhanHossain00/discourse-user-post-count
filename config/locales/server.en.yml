@@ -1,1 +1,5 @@
 en:
+  site_settings:
+    user_post_count_enabled: "Enable user post count"
+    user_post_count_in_usercard: "Show post count in user card"
+    user_post_count_in_post: "Show post count in post"

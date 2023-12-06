@@ -1,4 +1,10 @@
-TODO_plugin_name:
-  plugin_name_enabled:
+plugins:
+  user_post_count_enabled:
     default: false
+    client: true
+  user_post_count_in_usercard:
+    default: true
+    client: true
+  user_post_count_in_post:
+    default: true
     client: true

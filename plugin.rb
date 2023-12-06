@@ -1,21 +1,33 @@
 # frozen_string_literal: true
 
-# name: discourse-plugin-name
-# about: TODO
-# meta_topic_id: TODO
+# name: discourse-user-post-count
+# about: Displays the user post count.
+# meta_topic_id:
 # version: 0.0.1
-# authors: Discourse
-# url: TODO
+# authors: Arkshine
+# url: https://github.com/Arkshine/discourse-user-post-count
 # required_version: 2.7.0
 
-enabled_site_setting :plugin_name_enabled
+register_asset "stylesheets/common/user-post-count.scss"
 
-module ::MyPluginModule
-  PLUGIN_NAME = "discourse-plugin-name"
+enabled_site_setting :user_post_count_enabled
+
+module ::UserPostCount
+  PLUGIN_NAME = "discourse-user-post-count"
 end
 
-require_relative "lib/my_plugin_module/engine"
+require_relative "lib/user_post_count/engine"
 
 after_initialize do
-  # Code which should run after Rails has finished booting
+  add_to_serializer(
+    :post,
+    :user_post_count,
+    include_condition: -> { SiteSetting.user_post_count_in_post },
+  ) { object&.user&.post_count }
+
+  add_to_serializer(
+    :user_card,
+    :post_count,
+    include_condition: -> { SiteSetting.user_post_count_in_usercard },
+  ) { object.post_count }
 end
