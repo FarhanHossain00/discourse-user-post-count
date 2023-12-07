@@ -1,8 +1,8 @@
 {
-  "name": "discourse-plugin-name",
+  "name": "discourse-user-post-count",
   "version": "0.0.1",
-  "repository": "TODO",
-  "author": "Discourse",
+  "repository": "https://github.com/Arkshine/discourse-user-post-count",
+  "author": "Arkshine",
   "license": "MIT",
   "devDependencies": {
     "@discourse/lint-configs": "^1.2.0",
