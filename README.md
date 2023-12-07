@@ -1,6 +1,6 @@
 # **Dicourse User Post Count** Plugin
 
-Displays the number of posts a user has made in total, in the following locations:
+Displays the number of posts a user has made in total in the following locations:
   * Post (*next to the username*)
   * User card (*below the username*)
 
@@ -14,3 +14,7 @@ Displays the number of posts a user has made in total, in the following location
 
 ![image](https://github.com/Arkshine/discourse-user-post-count/assets/360640/f7b30984-2c27-4144-8013-1197760795ba)
 
+### TODO
+
+* Make unit tests.
+* More options?
